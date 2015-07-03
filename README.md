@@ -26,3 +26,5 @@ rd http://www.bbc.co.uk/news/technology-33228149
 # customer, a Ms T Swift of Beverly Hills, California.
 # ...
 ```
+
+Why `rd`? I wanted to create a tool called `read`, but that's a pretty important built-in shell function!
