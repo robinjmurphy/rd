@@ -41,8 +41,7 @@ func main() {
 	if key == "" {
 		printMissingKeyMessage()
 	}
-	client := readability.NewClient("", "", key)
-	parser := client.NewParserClient()
+	parser := readability.NewParserClient(key)
 	article, resp, err := parser.Parse(url)
 	if resp != nil && resp.StatusCode == 400 {
 		usage()
